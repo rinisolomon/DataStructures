@@ -6,7 +6,8 @@ public class Program {
 	public static void main(String[] args) 
 	{
 		SingleLinkedList s = new SingleLinkedList();
-        for (int i=0;i<5;i++)
+		DoubleLinkedList d = new DoubleLinkedList();
+        /*for (int i=0;i<5;i++)
         {
         	System.out.println("enter value");
         	Scanner r = new Scanner(System.in);
@@ -14,7 +15,7 @@ public class Program {
 		
         }
         s.PrintElements();
-        
+        */
         
    /*     //insert node in the beginning of the linked list
         System.out.println("enter value to insert in the beginning");
@@ -29,7 +30,7 @@ public class Program {
         s. AddNodeLast(r1.nextInt());
         s.PrintElements(); */
         
-       int choice =0;
+       int choice =1;
        /*
         do
         {
@@ -48,7 +49,7 @@ public class Program {
         choice = r4.nextInt();
         }while(choice == 0);     */
 
-	   do
+	  /* do
 	   {
 		   s.RemoveNode();
 		   s.PrintElements();
@@ -57,6 +58,28 @@ public class Program {
 	       choice = r4.nextInt();
 	      
 	    }while(choice == 0);  
+	*/
+	
+	/*------------------DOUBLY LINKED LIST--------------------------*/
+       
+       do
+       {
+    	      	   
+    	   System.out.println("Enter the position to enter");
+   	       Scanner r = new Scanner(System.in);
+   	       int position = r.nextInt();
+   		
+   	       System.out.println("Enter the value to enter");
+   	       Scanner r1 = new Scanner(System.in);
+   	       int value = r1.nextInt();
+   	       d.AddNode(value, position);
+   	       
+    	   d.PrintElements();
+    	   System.out.println("enter 0 to exit");
+	       Scanner r4 = new Scanner(System.in);
+	      choice = r4.nextInt();
+       }while (choice != 0);
+	
 	
 	}
 
