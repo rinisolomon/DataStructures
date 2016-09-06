@@ -7,6 +7,7 @@ public class Program {
 	{
 		SingleLinkedList s = new SingleLinkedList();
 		DoubleLinkedList d = new DoubleLinkedList();
+		CircularLinkedList c = new CircularLinkedList();
         /*for (int i=0;i<5;i++)
         {
         	System.out.println("enter value");
@@ -61,7 +62,7 @@ public class Program {
 	*/
 	
 	/*------------------DOUBLY LINKED LIST--------------------------*/
-       
+     /*  
        do
        {
     	      	   
@@ -80,7 +81,30 @@ public class Program {
 	      choice = r4.nextInt();
        }while (choice != 0);
 	
-	
+	*/
+       
+       
+     /*---------------------------------CIRCULAR LINKED LIST-------------------------*/
+       
+       do
+       {
+    	   
+    	   System.out.println("Enter the position to enter");
+   	       Scanner r = new Scanner(System.in);
+   	       int position = r.nextInt();
+   		
+   	       System.out.println("Enter the value to enter");
+   	       Scanner r1 = new Scanner(System.in);
+   	       int value = r1.nextInt();
+   	       //c.AddNode(value);
+   	       
+    	   c.AddinPosition(value, position);
+    	   c.PrintElements();
+    	   System.out.println("enter 0 to exit");
+	       Scanner r4 = new Scanner(System.in);
+	      choice = r4.nextInt();  
+       }while(choice != 0);
+       
 	}
 
 }
